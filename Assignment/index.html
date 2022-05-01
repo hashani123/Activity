@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type = "text/javascript" src ="index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title> sales management</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Register 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Customer</a></li>
+                  <li><a class="dropdown-item" href="#">Item </a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Item 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Customer</a></li>
+                  <li><a class="dropdown-item" href="#">Item </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+         </div>
+      </nav>
+      <!-- nav bar end-->
+
+      <!-- welcome -->
+      
+      <div class="row">
+        
+                  <img src="imgers/download (2).jpg" class="img-fluid" alt="" >
+            <div class="position-static"> 
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h1 style=" font-size:66px; color: beige;"><i>Welcome</i></h1>
+            </div> 
+         </div>
+       </div> 
+     
+      <!-- welcome end-->
+
+      <!--card-->
+      <br>
+        <div class="row">
+        <!--<div class="container">-->
+        <!-- customer Register -->
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <h2>Customer Register</h2>
+              </div>
+              <div class="card-body">
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Danushka" required>
+                    <div class="valid-feedback">
+                      Valid!
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">Middle name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Kumara" required>
+                    <div class="valid-feedback">
+                      Valid!
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom03" value="Perera" required>
+                    <div class="valid-feedback">
+                      Valid!
+                    </div>
+                  </div>
+                
+                  <div class="col-md-6">
+                    <label for="validationCustom04" class="form-label">Contact No</label>
+                    <input type="text" class="form-control" id="validationCustom04" value="070 0000000" required>
+                    <div class="invalid-feedback">
+                      Please enter valid phone number.
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <label for="validationCustom05" class="form-label">District</label>
+                    <select class="form-select" id="validationCustom05" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option value="1">Ampara</option>
+                      <option value="2">Anuradhapura</option>
+                      <option value="3">Badulla</option>
+                      <option value="4">Batticaloa</option>
+                      <option value="5">Colombo</option>
+                      <option value="6">Galle</option>
+                      <option value="7">Gampaha</option>
+                      <option value="8">Hambantota</option>
+                      <option value="9">Jaffna</option>
+                      <option value="10">Kalutara</option>
+                      <option value="11">Kalutara</option>
+                      <option value="12">Kandy</option>
+                      <option value="13">Kegalle</option>
+                      <option value="14">Kilinochchi</option>
+                      <option value="15">Kurunegala</option>
+                      <option value="16">Mannar</option>
+                      <option value="17">Matale</option>
+                      <option value="18">Matara</option>
+                      <option value="19">Moneragala</option>
+                      <option value="20">Mullaitivu</option>
+                      <option value="21">Nuwara Eliya</option>
+                      <option value="22">Polonnaruwa</option>
+                      <option value="23">Puttalam</option>
+                      <option value="24">Rathnapura</option>
+                      <option value="25">Vavuniya</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid district.
+                    </div>
+                  </div>
+                                   
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- customer Register end -->
+
+          <!-- Item Register -->
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">
+                <h2>Item Register</h2>
+              </div>
+              <div class="card-body">
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-md-6">
+                    <label for="validationItem01" class="form-label">Item code</label>
+                    <input type="text" class="form-control" id="validationItem01" value="EY000" required>
+                    <div class="valid-feedback">
+                      Enter valid item code.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationItem02" class="form-label">Item name</label>
+                    <input type="text" class="form-control" id="validationItem02" value="aaaaa" required>
+                    <div class="valid-feedback">
+                      Enter valid item name.
+                    </div>
+                  </div>
+                
+                  <div class="col-md-6">
+                    <label for="validationItem03" class="form-label">Item category </label>
+                    <select class="form-select" id="validationItem03" required>
+                      <option selected disabled value="">category </option>
+                      <option value="1">Printers</option>
+                      <option value="2">Laptops</option>
+                      <option value="3">Gadgets</option>
+                      <option value="4">Ink bottels</option>
+                      <option value="5">Cartridges</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid category.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationItem04" class="form-label">Item sub category </label>
+                    <select class="form-select" id="validationItem04" required>
+                      <option selected disabled value="">Sub category </option>
+                      <option value="1">HP</option>
+                      <option value="2">Dell</option>
+                      <option value="3">Lenovo</option>
+                      <option value="4">Acer</option>
+                      <option value="5">Samsung</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid sub category .
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationItem05" class="form-label">Quantity</label>
+                    <input type="text" class="form-control" id="validationItem05" value="0" required>
+                    <div class="valid-feedback">
+                      Valid!
+                    </div>
+                  </div>
+                
+                  <div class="col-md-6">
+                    <label for="validationItem06" class="form-label">Unit price</label>
+                    <input type="text" class="form-control" id="validationItem06" value=" 000" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                                   
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Item Register end -->
+        <!--</div>-->
+        </div>
+
+        <br>
+      <!--card end-->
+
+
+      <br>
+      <!--List-->
+
+       <!--Customer List-->
+
+      <div class="card text-center">
+        <div class="card bg-light text-dark" >
+        <br>
+          <h1>Customer List</h2>
+        <div class="card-body" style="align-self:center;">
+          <div class="card" style="width:75rem; ">
+            <div class="card-body">
+              <table class="table table-hover">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col">First Name</th>
+                      <th scope="col">Middle Name</th>
+                      <th scope="col">Last Name</th>
+                      <th scope="col">Contact number</th>
+                      <th scope="col">District</th>
+                      <th scope="col">Action</th>           
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>validationCustom01</td>
+                      <td>validationCustom02</td>
+                      <td>validationCustom03</td>
+                      <td>validationCustom04</td>
+                      <td>validationCustom05</td>
+                      <td class="col-md-3">
+                        <a class="btn btn-primary" href="customerUpdate.html" role="button">Update</a>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+         
+          <br>       
+        </div>
+        <br>
+
+      </div>
+
+      </div>
+       <!--Customer List end -->
+       <br> <br>
+
+
+       <!--Item List-->
+       <div class="card text-center">
+        <div class="card bg-light text-dark" >
+        <br>
+          <h1>Item List</h2>
+        <div class="card-body" style="align-self:center;">
+          <div class="card" style="width:75rem; ">
+            <div class="card-body">
+              <table class="table table-hover">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col"> Item code</th>
+                      <th scope="col">Item name</th>
+                      <th scope="col">Item category</th>
+                      <th scope="col">Item sub category</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Unit price</th>
+                      <th scope="col">Action</th>           
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>validationItem01</td>
+                      <td>validationItem02</td>
+                      <td>validationItem03</td>
+                      <td>validationItem04</td>
+                      <td>validationItem05</td>
+                      <td>validationItem06</td>
+                      <td class="col-md-3">
+                        <a class="btn btn-primary" href="ItemUpdate.html" role="button">Update</a>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </table>
+            </div>
+          </div>
+          <br>
+
+        </div>
+        <br>
+
+      </div>
+
+      </div>
+      <!--Item List end-->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
